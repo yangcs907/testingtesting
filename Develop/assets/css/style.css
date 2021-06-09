@@ -1,0 +1,147 @@
+
+/*This styles the entire page*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*entire page background color*/
+body {
+    background-color: #d9dcd6;
+}
+/* The nav bar and H1 tag*/
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+/* styling the nav bar and h1 */
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+/*styling the span tag*/
+.header h1 .seo {
+    color: #d9dcd6;
+}
+/* The next 3 style the nav bar and its children and grandchild(a) */
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/*CSS for Main tag sectin*/
+p {
+    font-size: 16px;
+}
+/*This is the background picture that sits between nav bar and main section on the page*/
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*CSS for 3 sections under the main tag*/
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* These 2 tags float the images in the main content */
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/*creating the box style for social media marketing section of page in main tag 
+but because all three have the same declaration you can use multiple selectors in css */
+.social-media-marketing , .online-reputation-management , #search-engine-optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/* Consolidate css styling by using the parent class instead of the three direct classes of the three images in the main tag of html */
+
+ .content img {
+    max-height: 200px;
+}
+
+/*instead of styling the three H2's seperately, style them under their parent class
+of .content class */
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/*CSS for the aside tag*/
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+/* Consolidated the css by seperating the classes by commas and styling under one declaration */
+.benefit-lead , .benefit-cost , .benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+
+/* Used parent class benefits to style all three children H3 at once */
+.benefits h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* To style all the images in the benefit class, use the parent selector .benefits instead of each images class seperatly and writing the samy styling for each. */
+.benefits img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/*styling for the footer of the page*/
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
